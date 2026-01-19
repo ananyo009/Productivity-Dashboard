@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script defer src="script.js"></script>
+    <title>Productivity DashBoard</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="nav-in">
+
+                <h1>Productivity DashBoard</h1>
+
+                <div class="theme">
+                    <h4>Change Theme</h4>
+                </div>
+            
+        </div>
+            
+        </nav>
+        <section class="allElems">
+<header>
+    <div class="time">
+        <h2>9 january,2025</h2>
+        <h1>Friday, 1:00 pm</h1>
+        <h3>Kolkata, West Bengal</h3>
+    </div>
+
+    <div class="weather">
+        <h2>17°C</h2>
+        <h2 id="sky">Clear</h2>
+        <h3 id="preci">Precipitation: 0%</h3>
+        <h3 id="humid">Humidity: 66%</h3>
+    </div>
+
+</header>
+
+            <div class="allFeatures">
+
+<section class="elems todo" id="0">
+                <img src="https://i.pinimg.com/736x/70/be/4b/70be4beb641318234c325eafed173d3d.jpg" alt="">
+                <p>To-Do</p>
+            </section>
+            <section class="elems daily" id="1">
+                <img src="https://i.pinimg.com/1200x/93/c0/5c/93c05cf68d29a5f88c091b2a094b089d.jpg" alt="">
+                <p>Daily Planner</p>
+            </section>
+            <section class="elems moto" id="2">
+                <img src="https://i.pinimg.com/1200x/c5/0c/e2/c50ce2954d458e0b3ad8b3a4a7743901.jpg" alt="">
+                <p>motivation</p>
+            </section>
+            <section class="elems pomo" id="3">
+                <img src="https://i.pinimg.com/736x/86/68/07/866807e7803cc248add9dee858f7053d.jpg" alt="">
+                <p>Pomodoro Timer</p>
+            </section>
+            <section class="elems expense" id="4">
+                <img src="https://i.pinimg.com/736x/84/06/3f/84063f7b2fd790af649419d919ef9ce1.jpg" alt="">
+                <p>Expense Tracker</p>
+            </section>
+
+            </div>
+            
+        </section>
+        <section class="fullElems todo-fullpage">
+                <h2>Your personalized ToDo list</h2>
+            <button class="back" id="0">Close</button>
+           
+            <div class="todo-container">
+                <div class="addTask">
+                    <form>
+                        <input type="text" name="" id="task-input" placeholder="Enter Task" required>
+                        <textarea name="" id="" placeholder="Enter Details"></textarea>
+                        <div class="mark-imp">
+                            <input type="checkbox" name="" id="check">
+                            <label for="check">Mark as important!</label>
+                        </div>
+                        <button type="submit">Add Task</button>
+                    </form>
+                </div>
+                <div class="allTask">
+            </div>
+        </section>
+        <section class="fullElems daily-fullpage">
+                <h2>Daily Planner</h2>
+                <button id="reset">Reset</button>
+                <button class="back" id="1">Close</button>
+            <div class="day-planner">
+                <div class="day-planner-time">
+                    <p>6:00 - 7:00</p>
+                    <input type="text" name="" id="" placeholder="...">
+                </div>
+                <div class="day-planner-time">
+                    <p>6:00 - 7:00</p>
+                    <input type="text" name="" id="" placeholder="...">
+                </div>
+            </div>
+        </section>
+        <section class="fullElems moto-fullpage">
+            <button class="back" id="2">Close</button>
+            <div class="motivation-container">
+                <div class="motivation-wrapper">
+                    <img src="./icons8-get-quote-100.png" alt="">
+                    <div class="motivation-1">
+                        <h3>Quote of the day</h3>
+                    </div>
+                    <div class="motivation-2">
+                        <h3></h3>
+                    </div>
+                    <div class="motivation-3">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fullElems pomo-fullpage">
+            <h1>Pomodoro</h1>
+            <button class="back" id="3">Close</button>
+            <div class="pomo-timer">
+                <h4 class="session">Work Session</h4>
+                <h1>25:00</h1>
+                <div class="butt">  
+                    <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="resett">Reset</button>
+            </div>
+              
+            </div>
+        </section>
+        <section class="fullElems expense-fullpage">
+            <h2>Expense Tracker</h2>
+            <button class="back" id="4">Close</button>
+            <div class="container">
+                <div class="expense-input">
+                    <form>
+                        <input type="text" placeholder="enter the expense" id="expense-name" required>
+                        <input type="number" id="amount" placeholder="enter the amount" required>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+                <div class="expenses">
+                    <div class="allExpense">
+
+                    </div>
+
+                    <div class="total">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+</body>
+</html>

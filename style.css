@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--ter);
+}
+:root{
+    --prim: #213448;
+    --sec:  #547792;
+    --ter: #94B4C1;
+    --quad: #EAE0CF;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    color:var(--quad);
+    margin-top: 100px;
+}
+section.allElems{
+    position: absolute;
+    padding: 20px 10px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--ter);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:50px;
+    padding:30px 100px;
+    overflow: auto;
+}
+section.allElems .allFeatures{
+
+ display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:50px;
+}
+section.allElems header{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    /* background-image: url('https://i.pinimg.com/736x/3e/3e/cb/3e3ecb706556de52c23cf0ef897e69de.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* color:white; */
+}
+
+section.allElems header .time h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+section.allElems header .time h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+section.allElems header .time h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+section.allElems header .weather h2{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+section.allElems header .weather h3{
+    font-size: 30px;
+    font-weight:500 ;
+}
+
+
+section.allElems::-webkit-scrollbar{
+    display: none;
+}
+section .elems{
+    height: 300px;
+    width: 300px;
+    background-color: var(--quad);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.elems img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elems p{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+section.fullElems{
+    position: absolute;
+    display:none;
+    height: 100%;
+    width: 100%;
+    background-color: var(--ter);
+    padding: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: 0%;
+    z-index: 999;
+}
+.back{
+    position: absolute;
+    top:5%;
+    right: 2%;
+    padding: 10px 10px;
+    background-color: red;
+    color:white;
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px black;
+}
+
+.back:active{
+    scale:0.97;
+}
+.back:hover{
+    cursor: pointer;
+}
+
+
+section.todo-fullpage .todo-container{
+    height: 80%;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--ter);
+    justify-content: space-between;
+}
+
+.todo-fullpage .todo-container .addTask{
+    height: 100%;
+    width: 33%;
+    background-color: var(--prim);
+    border-radius: 20px;
+}
+
+.todo-fullpage .todo-container .allTask{
+    height: 100%;
+    width: 65%;
+    background-color: var(--prim);
+    border-radius: 20px;
+}
+.todo-fullpage .todo-container .addTask form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    gap:20px;
+}
+.todo-container .addTask form input#task-input{
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--quad);
+}
+
+.todo-container .addTask form textarea{
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--quad);
+}
+
+.todo-container .addTask form button{
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--ter);
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: all ease 0.3s;
+}
+.todo-container .addTask form button:hover{
+    cursor: pointer;
+}
+.todo-container .addTask form button:active{
+    scale: 0.97;
+}
+.allTask{
+    padding: 20px 20px;
+    overflow: auto;
+}
+
+.allTask .Task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--quad);
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Task h5{
+    color:var(--prim);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    /* text-decoration: line-through; */
+}
+
+.Task button{
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    color: var(--prim);
+    background-color: rgb(87, 237, 0);
+}
+
+.todo-container .addTask form #mark-imp{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+
+}
+.todo-container .addTask form label{
+    font-size: 25px;
+    background-color: rgb(255, 74, 74);
+    color:var(--prim);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.todo-container .addTask form input[type="checkbox"]{
+    transform: scale(2);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.allTask .Task h5 span{
+ font-size: 21px;
+ background-color: rgb(246, 59, 59);
+ padding: 5px 10px;
+ color:var(--prim);
+ border-radius: 20px;
+}
+
+.allTask .Task h5 span.true{
+    opacity: 1;
+}
+.allTask .Task h5 span.false{
+    opacity: 0;
+}
+
+.Task button:active{
+    scale: 0.96;
+}
+
+.Task div.para .detail{
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    background-color: var(--sec);
+    cursor: pointer;
+    border-radius: 10px;
+    color:var(--prim);
+    position:relative;
+    top: 0;
+    left: 0;
+}
+
+.Task div.para div.detail:active{
+    scale: 0.96;
+}
+
+.Task div.para div.detail div.child{
+    position:relative;
+    bottom:-5%;
+    right: -25%;
+    display:none;
+    background-color: greenyellow;
+    color:var(--prim);
+    padding: 5px;
+    z-index: 999;
+}
+
+.Task div.para div.detail  div.child p{
+    font-size: 20px;
+}
+
+section.daily-fullpage .day-planner{
+    height: 85%;
+    width: 100%;
+    background-color: var(--prim);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: auto;
+}
+
+.day-planner .day-planner-time{
+    height: 80px;
+    background-color:var(--sec);
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    width: 49%;
+
+}
+
+.day-planner h1{
+    font-size: 30px;
+}
+
+.day-planner::-webkit-scrollbar{
+    display: none;
+}
+
+.day-planner .day-planner-time input[type="text"]{
+   
+    padding: 34px 40px;
+    width: 100%;
+    font-size: 30px;
+    background-color:var(--sec);
+    color: var(--quad);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.day-planner .day-planner-time p{
+    position: absolute;
+    top:12%;
+    left: 1%;
+    font-size: 18px;
+    color:var(--quad);
+}
+#reset{
+    padding: 10px;
+    font-size: 20px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+
+#reset:active{
+    scale: 0.96;
+}
+
+.day-planner .upper h2{
+    display: block;
+}
+
+.day-planner .upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.moto-fullpage{
+    height: 100%;
+    width: 100%;
+    /* display: block; */
+    /* position: relative; */
+}
+
+section.moto-fullpage .motivation-container{
+    margin-top: 10px;
+    height: 400px;
+    width: 800px;
+    /* background-color:var(--prim); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+}
+section.moto-fullpage .motivation-container::after{
+   content: '';
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   background-color:var(--prim);
+   filter: blur(50px);
+   border-radius: 50px;
+   scale: 1.15;
+   z-index: 8;
+}
+section.moto-fullpage .motivation-container .motivation-wrapper{
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--sec);
+    border-radius: 50px;
+    padding: 10px;
+    color: var(--quad);
+}
+
+.motivation-1{
+    padding: 20px;
+    background-color: var(--prim);
+    border-radius: 40px;
+    width: fit-content;
+}
+.motivation-1 h3{
+    font-size: 30px;
+    font-weight: 500;
+    color:var(--quad);
+    text-align: center;
+}
+
+.motivation-2{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.motivation-2 h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--quad);
+}
+.motivation-3{
+    display: flex;
+    justify-content: flex-end;
+    /* border-radius: 50px; */
+}
+.motivation-3 h3{
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--quad);
+    background-color: var(--prim);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+}
+section.moto-fullpage .motivation-container .motivation-wrapper img{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    opacity: 0.8;
+}
+section.pomo-fullpage{
+    /* display: block; */
+    /* background: url('https://i.pinimg.com/736x/3e/3e/cb/3e3ecb706556de52c23cf0ef897e69de.jpg'); */
+    background-position: center;
+    background-size: cover;
+}
+section.pomo-fullpage h1{
+    font-size: 50px;
+}
+section.pomo-fullpage .pomo-timer{
+    margin-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+section.pomo-fullpage .pomo-timer h1{
+    font-size: 150px;
+}
+
+.pomo-timer .butt{
+    /* background-color: red; */
+    margin-top: 40px;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.butt button{
+    padding:30px 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    box-shadow: 7px 7px 2px black;
+    cursor: pointer;
+}
+.butt button:active{
+    box-shadow: 0px 0px 0px black;
+    scale: 0.96;
+}
+#start{
+    background-color: green;   
+}
+#stop{
+    background-color: red;
+}
+#resett{
+    background-color: yellow;
+}
+
+section.pomo-fullpage .session{
+    font-size: 30px;
+    /* position: absolute;
+    top:7%; */
+    background-color: green;
+    padding:10px ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section.expense-fullpage .container{
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding:  20px 30px;
+    display: flex;
+    gap:40px
+}
+
+section.expense-fullpage .container .expense-input{
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--sec);
+    border-radius: 20px;
+}
+
+section.expense-fullpage .container .expense-input form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+section.expense-fullpage .container .expense-input form input{
+    padding: 20px 40px;
+    font-size: 30px;
+    background-color: var(--quad);
+    
+}
+
+section.expense-fullpage .container .expense-input form button[type="submit"]{
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--ter);
+    box-shadow: 5px 5px 0px black;
+    cursor: pointer;
+}
+
+section.expense-fullpage .container .expense-input form button[type="submit"]:active{
+    scale: 0.97;
+    box-shadow: 0px 0px 0px black;
+}
+
+section.expense-fullpage .container .expenses{
+    height: 100%;
+    width: 45%;
+    background-color: var(--sec);
+    padding: 20px 30px;
+    border-radius: 20px;
+    /* position: relative; */
+}
+
+section.expense-fullpage .container .expenses .allExpense{
+    height: 90%;
+    width: 100%;
+    overflow-y:auto ;
+}
+
+section.expense-fullpage .container .expenses .allExpense .data{
+    width: 100%;
+    height: 70px;
+    background-color: var(--prim);
+    display: flex;
+    gap:30px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 10px;;
+}
+section.expense-fullpage .container .expenses .allExpense .data button.deleted{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px black;
+}
+section.expense-fullpage .container .expenses .data button#deleted:active{
+    scale:0.97;
+    box-shadow: 0px 0px 0px black;
+}
+section.expense-fullpage .container .expenses .data p{
+    font-size: 30px;
+}
+
+section.expense-fullpage .container .expenses .total{
+    height: 50px;
+    width: 100%;
+    position:sticky;
+    bottom:0%;
+    background-color: var(--quad);
+    color:var(--prim);
+    padding: 5px;
+    border-radius: 20px;
+}
+section.expense-fullpage .container .expenses .total h3{
+    font-size: 40px;
+    text-align: center;
+}
+section.expense-fullpage .container .expenses .allExpense::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    position: fixed;
+    z-index: 99;
+    top:0%;
+    height: 120px;
+    width: 100%;
+    padding: 20px;
+   
+}
+.nav-in h1{
+    font-size: 30px;
+    font-weight: 500;
+  
+}
+.nav-in{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+     background-color: var(--prim);
+     border-radius: 20px;
+}
+
+.theme h4{
+    pointer-events: none;
+    font-size: 30px ;
+    font-weight: 700;
+}
+
+.theme{
+    cursor: pointer;
+    transition: all ease 0.5s;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+.theme:active{
+    scale: 0.90;
+}
